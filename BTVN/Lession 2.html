@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN Lession 2</title>
+    <style>
+        body{
+            background-color: lightyellow;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            top: 50%;
+            left: 50%;
+            padding: 60px;
+            width: 100%;
+            font-size: 20px;
+        }
+        form .row{
+            margin: 20px 0 20px 20px;
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 30px;
+        }
+        input[type=submit]{
+            background-color: royalblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .email,.emaillabel{
+            width: 40%;
+        }
+        .pwd,.pwdlabel{
+            width: 40%;
+        }
+        .emaillabel{
+            margin: 50px 300px 10px 30px;
+        }
+        .pwdlabel{
+            margin: 50px auto 10px 300px;
+        }
+        .addresslabel,.address2label,.citylabel{
+            margin-left: 30px;
+        }
+        .address,.address2{
+            width: 1250px;
+        }
+        .city,.citylabel{
+            width: 40%;
+        }
+        .zip,.ziplabel{
+            width: 15%;
+        }
+        .citylabel{
+            margin: 50px 300px 10px 30px;
+        }
+        .statelabel{
+            margin: 50px 150px 10px 315px;
+        }
+        .ziplabel{
+            margin: 50px 100px 10px 180px
+        }
+        .select{
+            margin-left: 35px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 340px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BTVN Lession 2</h1>
+    <form action="">
+        <div class="row">
+            <label for="email" class="emaillabel">Email</label>
+            <label for="password" class="pwdlabel">Password</label>
+        </div>
+        <div class="row">
+            <input type="text" id="email" name="email" class="email" size="80px">
+            <input type="password" id="pwd" name="pwd" class="pwd">
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <label for="address" class="addresslabel">Address</label>
+        </div>
+        <div class="row">
+            <input type="text" id="address" name="address" placeholder="1234 Main st" class="address">
+        </div>
+        <div class="row">
+            <label for="address2" class="address2label">Address2</label><br>
+        </div>
+        <div class="row">
+            <input type="text" id="address2" name="address2" placeholder="Apartment, studio or floor" class="address2">
+        </div>
+        <div class="row">
+            <label for="city" class="citylabel">City</label>
+            <label for="state" class="statelabel">State</label>
+            <label for="zip" class="ziplabel">Zip</label>
+        </div>
+        <div class="row">
+            <div class="a">
+                <input type="text" id="city" name="city" class="city">
+                <select name="state" id="state" class="select">
+                    <option value="vn">Viet Nam</option>
+                    <option value="cn">China</option>
+                    <option value="rs">Russia</option>
+                    <option value="usa">America</option>
+                </select>
+                <input type="text" id="zip" name="zip" class="zip"> 
+            </div>
+        </div>
+        <div class="row">
+            <input type="checkbox" id="check" name="check" value="check">
+            <label for="check">Check me out</label>
+        </div>
+        <div class="row">
+            <input type="submit" value="Sign in">
+        </div>
+    </form>
+</body>
+</html>
