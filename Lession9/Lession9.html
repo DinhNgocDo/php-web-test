@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lession 9</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e350614712.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Nhập vào 1 chuỗi: "Viet nam vo dich, vo dich" </h1>
+    <div class="button">
+        <div class="demo" id="demKyTu"></div>
+        <div class="demo" id="demTu"></div>
+        <div class="demo" id="demKyTuLap"></div>
+        <div class="demo" id="demTuLap"></div>
+        <button onclick="demKyTu()">Đếm Ký Tự</button>
+        <button onclick="demTu()">Đếm Từ</button>
+        <button onclick="demKyTuLap()">Đếm Ký Tự Xuất Hiện</button>
+        <button onclick="demTuLap()">Đếm Từ Xuất Hiện</button>
+    </div>
+    <div class="center">
+        <div class="container">
+            <label for="" class="close-btn fas fa-times"></label>
+            <div class="text">Login Form</div>
+            <form action="#">
+                <div class="data">
+                    <label for="">Email or Phone</label>
+                    <input id="email" type="text" required>
+                </div>
+                <div class="data">
+                    <label for="">Password</label>
+                    <input id="pwd" type="password" required>
+                </div>
+                <div class="forgot-password"><a href="#">Forgot Password?</a></div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button onclick="checkLogin()" type="submit">Login</button>
+                </div>
+                <div class="signup-link">Not a member?<a href="#">Signup now</a></div>
+            </form>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
